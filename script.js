@@ -14,3 +14,9 @@
    }
    alert (maxNumber(a, b));
 
+let c = prompt('Enter a number');
+   function convertNubmer(c){
+      return -(c);
+   }
+   alert(convertNubmer(c));
+
