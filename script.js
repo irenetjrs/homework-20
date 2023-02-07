@@ -29,3 +29,31 @@ for(let i = 0; i < count; i++){
 return number;
 }
 alert(three(+number, +count));
+
+let metric = prompt('Enter `m` or `cm`');
+let km = prompt('Enter value of km');
+let m;
+let cm;
+function KmToM(km){
+   return km * 1000;
+
+      // m = km * 1000;
+      // return m;
+   }
+function KmToCm(km){
+   return km * 100000;
+
+      // cm = km * 100000;
+      // return cm;
+   }
+function getMetric(metric, km, m, cm){
+switch(metric){
+   case `m` :
+      return m(km);
+      break;
+   case `cm` :
+      return cm(km);
+
+}
+}
+alert(getMetric(metric, km, KmToM, KmToCm));
